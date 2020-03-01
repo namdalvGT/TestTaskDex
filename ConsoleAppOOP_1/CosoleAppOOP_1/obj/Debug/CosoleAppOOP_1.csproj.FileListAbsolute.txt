@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\CosoleAppOOP_1\CosoleAppOOP_1\obj\Debug\CosoleAppOOP_1.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\CosoleAppOOP_1\CosoleAppOOP_1\obj\Debug\CosoleAppOOP_1.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\CosoleAppOOP_1\CosoleAppOOP_1\bin\Debug\CosoleAppOOP_1.exe.config
+C:\6_Project_C#\Junior\CosoleAppOOP_1\CosoleAppOOP_1\bin\Debug\CosoleAppOOP_1.exe
+C:\6_Project_C#\Junior\CosoleAppOOP_1\CosoleAppOOP_1\bin\Debug\CosoleAppOOP_1.pdb
+C:\6_Project_C#\Junior\CosoleAppOOP_1\CosoleAppOOP_1\obj\Debug\CosoleAppOOP_1.exe
+C:\6_Project_C#\Junior\CosoleAppOOP_1\CosoleAppOOP_1\obj\Debug\CosoleAppOOP_1.pdb

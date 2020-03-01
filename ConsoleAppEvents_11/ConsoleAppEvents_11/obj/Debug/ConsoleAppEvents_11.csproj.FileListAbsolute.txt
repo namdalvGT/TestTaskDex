@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppEvents_11\ConsoleAppEvents_11\bin\Debug\ConsoleAppEvents_11.exe.config
+C:\6_Project_C#\Junior\ConsoleAppEvents_11\ConsoleAppEvents_11\bin\Debug\ConsoleAppEvents_11.exe
+C:\6_Project_C#\Junior\ConsoleAppEvents_11\ConsoleAppEvents_11\bin\Debug\ConsoleAppEvents_11.pdb
+C:\6_Project_C#\Junior\ConsoleAppEvents_11\ConsoleAppEvents_11\obj\Debug\ConsoleAppEvents_11.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppEvents_11\ConsoleAppEvents_11\obj\Debug\ConsoleAppEvents_11.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppEvents_11\ConsoleAppEvents_11\obj\Debug\ConsoleAppEvents_11.exe
+C:\6_Project_C#\Junior\ConsoleAppEvents_11\ConsoleAppEvents_11\obj\Debug\ConsoleAppEvents_11.pdb

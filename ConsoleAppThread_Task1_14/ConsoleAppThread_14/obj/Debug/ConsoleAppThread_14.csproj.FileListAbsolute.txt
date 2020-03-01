@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppThread_14\ConsoleAppThread_14\bin\Debug\ConsoleAppThread_14.exe.config
+C:\6_Project_C#\Junior\ConsoleAppThread_14\ConsoleAppThread_14\bin\Debug\ConsoleAppThread_14.exe
+C:\6_Project_C#\Junior\ConsoleAppThread_14\ConsoleAppThread_14\bin\Debug\ConsoleAppThread_14.pdb
+C:\6_Project_C#\Junior\ConsoleAppThread_14\ConsoleAppThread_14\obj\Debug\ConsoleAppThread_14.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppThread_14\ConsoleAppThread_14\obj\Debug\ConsoleAppThread_14.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppThread_14\ConsoleAppThread_14\obj\Debug\ConsoleAppThread_14.exe
+C:\6_Project_C#\Junior\ConsoleAppThread_14\ConsoleAppThread_14\obj\Debug\ConsoleAppThread_14.pdb

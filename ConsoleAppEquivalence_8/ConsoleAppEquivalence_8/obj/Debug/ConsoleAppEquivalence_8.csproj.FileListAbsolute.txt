@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppEquivalence_8\ConsoleAppEquivalence_8\bin\Debug\ConsoleAppEquivalence_8.exe.config
+C:\6_Project_C#\Junior\ConsoleAppEquivalence_8\ConsoleAppEquivalence_8\bin\Debug\ConsoleAppEquivalence_8.exe
+C:\6_Project_C#\Junior\ConsoleAppEquivalence_8\ConsoleAppEquivalence_8\bin\Debug\ConsoleAppEquivalence_8.pdb
+C:\6_Project_C#\Junior\ConsoleAppEquivalence_8\ConsoleAppEquivalence_8\obj\Debug\ConsoleAppEquivalence_8.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppEquivalence_8\ConsoleAppEquivalence_8\obj\Debug\ConsoleAppEquivalence_8.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppEquivalence_8\ConsoleAppEquivalence_8\obj\Debug\ConsoleAppEquivalence_8.exe
+C:\6_Project_C#\Junior\ConsoleAppEquivalence_8\ConsoleAppEquivalence_8\obj\Debug\ConsoleAppEquivalence_8.pdb

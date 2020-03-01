@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppExtentions_12\ConsoleAppExtentions_12\obj\Debug\ConsoleAppExtentions_12.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppExtentions_12\ConsoleAppExtentions_12\obj\Debug\ConsoleAppExtentions_12.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppExtentions_12\ConsoleAppExtentions_12\bin\Debug\ConsoleAppExtentions_12.exe.config
+C:\6_Project_C#\Junior\ConsoleAppExtentions_12\ConsoleAppExtentions_12\bin\Debug\ConsoleAppExtentions_12.exe
+C:\6_Project_C#\Junior\ConsoleAppExtentions_12\ConsoleAppExtentions_12\bin\Debug\ConsoleAppExtentions_12.pdb
+C:\6_Project_C#\Junior\ConsoleAppExtentions_12\ConsoleAppExtentions_12\obj\Debug\ConsoleAppExtentions_12.exe
+C:\6_Project_C#\Junior\ConsoleAppExtentions_12\ConsoleAppExtentions_12\obj\Debug\ConsoleAppExtentions_12.pdb

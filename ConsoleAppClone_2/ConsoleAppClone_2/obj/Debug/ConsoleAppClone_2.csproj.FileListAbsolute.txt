@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppClone_2\ConsoleAppClone_2\bin\Debug\ConsoleAppClone_2.exe.config
+C:\6_Project_C#\Junior\ConsoleAppClone_2\ConsoleAppClone_2\bin\Debug\ConsoleAppClone_2.exe
+C:\6_Project_C#\Junior\ConsoleAppClone_2\ConsoleAppClone_2\bin\Debug\ConsoleAppClone_2.pdb
+C:\6_Project_C#\Junior\ConsoleAppClone_2\ConsoleAppClone_2\obj\Debug\ConsoleAppClone_2.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppClone_2\ConsoleAppClone_2\obj\Debug\ConsoleAppClone_2.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppClone_2\ConsoleAppClone_2\obj\Debug\ConsoleAppClone_2.exe
+C:\6_Project_C#\Junior\ConsoleAppClone_2\ConsoleAppClone_2\obj\Debug\ConsoleAppClone_2.pdb

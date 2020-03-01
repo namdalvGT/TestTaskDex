@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppGenericType_10\ConsoleAppGenericType_10\bin\Debug\ConsoleAppGenericType_10.exe.config
+C:\6_Project_C#\Junior\ConsoleAppGenericType_10\ConsoleAppGenericType_10\bin\Debug\ConsoleAppGenericType_10.exe
+C:\6_Project_C#\Junior\ConsoleAppGenericType_10\ConsoleAppGenericType_10\bin\Debug\ConsoleAppGenericType_10.pdb
+C:\6_Project_C#\Junior\ConsoleAppGenericType_10\ConsoleAppGenericType_10\obj\Debug\ConsoleAppGenericType_10.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppGenericType_10\ConsoleAppGenericType_10\obj\Debug\ConsoleAppGenericType_10.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppGenericType_10\ConsoleAppGenericType_10\obj\Debug\ConsoleAppGenericType_10.exe
+C:\6_Project_C#\Junior\ConsoleAppGenericType_10\ConsoleAppGenericType_10\obj\Debug\ConsoleAppGenericType_10.pdb

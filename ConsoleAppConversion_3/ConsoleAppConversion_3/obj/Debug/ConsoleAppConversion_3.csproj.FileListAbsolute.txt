@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppConversion_3\ConsoleAppConversion_3\bin\Debug\ConsoleAppConversion_3.exe.config
+C:\6_Project_C#\Junior\ConsoleAppConversion_3\ConsoleAppConversion_3\bin\Debug\ConsoleAppConversion_3.exe
+C:\6_Project_C#\Junior\ConsoleAppConversion_3\ConsoleAppConversion_3\bin\Debug\ConsoleAppConversion_3.pdb
+C:\6_Project_C#\Junior\ConsoleAppConversion_3\ConsoleAppConversion_3\obj\Debug\ConsoleAppConversion_3.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppConversion_3\ConsoleAppConversion_3\obj\Debug\ConsoleAppConversion_3.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppConversion_3\ConsoleAppConversion_3\obj\Debug\ConsoleAppConversion_3.exe
+C:\6_Project_C#\Junior\ConsoleAppConversion_3\ConsoleAppConversion_3\obj\Debug\ConsoleAppConversion_3.pdb

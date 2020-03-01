@@ -1,0 +1,10 @@
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\bin\Debug\ConsoleAppSerialization_13.exe.config
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\bin\Debug\ConsoleAppSerialization_13.exe
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\bin\Debug\ConsoleAppSerialization_13.pdb
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\bin\Debug\Newtonsoft.Json.dll
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\bin\Debug\Newtonsoft.Json.xml
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\obj\Debug\ConsoleAppSerialization_13.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\obj\Debug\ConsoleAppSerialization_13.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\obj\Debug\ConsoleAppSerialization_13.csproj.CopyComplete
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\obj\Debug\ConsoleAppSerialization_13.exe
+C:\6_Project_C#\Junior\ConsoleAppSerialization_13\ConsoleAppSerialization_13\obj\Debug\ConsoleAppSerialization_13.pdb

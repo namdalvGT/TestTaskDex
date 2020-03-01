@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppDictionary_9\ConsoleAppDictionary_9\bin\Debug\ConsoleAppDictionary_9.exe.config
+C:\6_Project_C#\Junior\ConsoleAppDictionary_9\ConsoleAppDictionary_9\bin\Debug\ConsoleAppDictionary_9.exe
+C:\6_Project_C#\Junior\ConsoleAppDictionary_9\ConsoleAppDictionary_9\bin\Debug\ConsoleAppDictionary_9.pdb
+C:\6_Project_C#\Junior\ConsoleAppDictionary_9\ConsoleAppDictionary_9\obj\Debug\ConsoleAppDictionary_9.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppDictionary_9\ConsoleAppDictionary_9\obj\Debug\ConsoleAppDictionary_9.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppDictionary_9\ConsoleAppDictionary_9\obj\Debug\ConsoleAppDictionary_9.exe
+C:\6_Project_C#\Junior\ConsoleAppDictionary_9\ConsoleAppDictionary_9\obj\Debug\ConsoleAppDictionary_9.pdb

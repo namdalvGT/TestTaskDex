@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppIEnumerable_5\ConsoleAppIEnumerable_5\bin\Debug\ConsoleAppIEnumerable_5.exe.config
+C:\6_Project_C#\Junior\ConsoleAppIEnumerable_5\ConsoleAppIEnumerable_5\bin\Debug\ConsoleAppIEnumerable_5.exe
+C:\6_Project_C#\Junior\ConsoleAppIEnumerable_5\ConsoleAppIEnumerable_5\bin\Debug\ConsoleAppIEnumerable_5.pdb
+C:\6_Project_C#\Junior\ConsoleAppIEnumerable_5\ConsoleAppIEnumerable_5\obj\Debug\ConsoleAppIEnumerable_5.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppIEnumerable_5\ConsoleAppIEnumerable_5\obj\Debug\ConsoleAppIEnumerable_5.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppIEnumerable_5\ConsoleAppIEnumerable_5\obj\Debug\ConsoleAppIEnumerable_5.exe
+C:\6_Project_C#\Junior\ConsoleAppIEnumerable_5\ConsoleAppIEnumerable_5\obj\Debug\ConsoleAppIEnumerable_5.pdb

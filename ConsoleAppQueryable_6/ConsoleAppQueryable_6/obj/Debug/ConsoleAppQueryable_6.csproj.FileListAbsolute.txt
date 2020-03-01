@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppQueryable_6\ConsoleAppQueryable_6\bin\Debug\ConsoleAppQueryable_6.exe.config
+C:\6_Project_C#\Junior\ConsoleAppQueryable_6\ConsoleAppQueryable_6\bin\Debug\ConsoleAppQueryable_6.exe
+C:\6_Project_C#\Junior\ConsoleAppQueryable_6\ConsoleAppQueryable_6\bin\Debug\ConsoleAppQueryable_6.pdb
+C:\6_Project_C#\Junior\ConsoleAppQueryable_6\ConsoleAppQueryable_6\obj\Debug\ConsoleAppQueryable_6.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppQueryable_6\ConsoleAppQueryable_6\obj\Debug\ConsoleAppQueryable_6.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppQueryable_6\ConsoleAppQueryable_6\obj\Debug\ConsoleAppQueryable_6.exe
+C:\6_Project_C#\Junior\ConsoleAppQueryable_6\ConsoleAppQueryable_6\obj\Debug\ConsoleAppQueryable_6.pdb

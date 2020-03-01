@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppIComparable_7\ConsoleAppIComparable_7\bin\Debug\ConsoleAppIComparable_7.exe.config
+C:\6_Project_C#\Junior\ConsoleAppIComparable_7\ConsoleAppIComparable_7\bin\Debug\ConsoleAppIComparable_7.exe
+C:\6_Project_C#\Junior\ConsoleAppIComparable_7\ConsoleAppIComparable_7\bin\Debug\ConsoleAppIComparable_7.pdb
+C:\6_Project_C#\Junior\ConsoleAppIComparable_7\ConsoleAppIComparable_7\obj\Debug\ConsoleAppIComparable_7.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppIComparable_7\ConsoleAppIComparable_7\obj\Debug\ConsoleAppIComparable_7.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppIComparable_7\ConsoleAppIComparable_7\obj\Debug\ConsoleAppIComparable_7.exe
+C:\6_Project_C#\Junior\ConsoleAppIComparable_7\ConsoleAppIComparable_7\obj\Debug\ConsoleAppIComparable_7.pdb
