@@ -1,0 +1,7 @@
+C:\6_Project_C#\Junior\ConsoleAppThreadNew\ConsoleAppThreadNew\bin\Debug\ConsoleAppThreadNew.exe.config
+C:\6_Project_C#\Junior\ConsoleAppThreadNew\ConsoleAppThreadNew\bin\Debug\ConsoleAppThreadNew.exe
+C:\6_Project_C#\Junior\ConsoleAppThreadNew\ConsoleAppThreadNew\bin\Debug\ConsoleAppThreadNew.pdb
+C:\6_Project_C#\Junior\ConsoleAppThreadNew\ConsoleAppThreadNew\obj\Debug\ConsoleAppThreadNew.csprojAssemblyReference.cache
+C:\6_Project_C#\Junior\ConsoleAppThreadNew\ConsoleAppThreadNew\obj\Debug\ConsoleAppThreadNew.csproj.CoreCompileInputs.cache
+C:\6_Project_C#\Junior\ConsoleAppThreadNew\ConsoleAppThreadNew\obj\Debug\ConsoleAppThreadNew.exe
+C:\6_Project_C#\Junior\ConsoleAppThreadNew\ConsoleAppThreadNew\obj\Debug\ConsoleAppThreadNew.pdb
