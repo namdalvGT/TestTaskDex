@@ -10,7 +10,7 @@ namespace ConsoleAppThreadNew.Class
 {
     class PersonSource
     {
-        public void GetPerson()
+        public Person GetPerson()
         {
 
             string names = " Аарон Абрам Аваз Августин Авраам Агап Агапит Агат Агафон Адам Адриан Азамат" +
@@ -36,7 +36,7 @@ namespace ConsoleAppThreadNew.Class
             int numberRandom = random.Next(namesSplit.Length);
 
             var person = new Person() { Name = namesSplit[numberRandom] };
-            Console.WriteLine($"Имя:{person.Name}");
+            return person;
         }
     }
 }

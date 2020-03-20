@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,82 +9,112 @@ using ConsoleAppThreadNew.Interface;
 
 namespace ConsoleAppThreadNew.Class
 {
-    class JobExecutor:IJobExecutor
+    public class JobExecutor : IJobExecutor
     {
         private Queue<Action> _queueActions = new Queue<Action>();
+        private EventWaitHandle _eventWait = new AutoResetEvent(false);
+        private bool _run = false;
+        private object _locked = new object();
+        private Task _currentTask = null;
+        private Semaphore _semaphore;
 
-        private Thread[] _threads;
         public int Amount { get; set; }
 
-        public JobExecutor()
-        {
-            Amount = 0;
-        }
-        
         public void Start(int maxConcurrent)
         {
-            var tempMaxConcurrent = 0;
-           
-            ThreadPool.SetMaxThreads(maxConcurrent, maxConcurrent);
-            ThreadPool.GetMaxThreads(out tempMaxConcurrent, out tempMaxConcurrent);
-            Console.WriteLine($"Установлено максимальное количество потоков: {tempMaxConcurrent}");
-
-            if (_queueActions.Any())
+            _currentTask = Task.Run((() =>
             {
-                Amount = _queueActions.Count;
-                _threads = new Thread[_queueActions.Count];
-
-                for (int i = 0; i < _threads.Length; i++)
+                lock (_locked)
                 {
-                    var action = _queueActions.Dequeue();
-                    _threads[i] = new Thread(new ThreadStart(action)) { Name = $"Поток: {i}" };
-                    _threads[i].Start();
-                    Console.WriteLine($"Поток \"{ _threads[i].Name}\" обработан");
+                    Amount = _queueActions.Count;
                 }
-            }
-            else
-            {
-                Console.WriteLine("Очередь задач пуста!");
-            }
+
+                _run = true;
+                _eventWait = new AutoResetEvent(false);
+
+                using (_semaphore = new Semaphore(maxConcurrent, maxConcurrent))
+                {
+                    while (_run)
+                    {
+                        Action action = null;
+                        lock (_locked)
+                        {
+                            if (_queueActions.Any())
+                            {
+                                action = _queueActions.Dequeue();
+                            }
+                        }
+
+                        if (action != null)
+                        {
+                            ThreadPool.QueueUserWorkItem((state) =>
+                            {
+                                Processing(action);
+                            });
+                        }
+                        else
+                        {
+                            _eventWait.WaitOne();
+                        }
+                    }
+                    Console.WriteLine($"Задачи обработаны. Количество обработанных {Amount}");
+                }
+            }));
         }
 
         public void Stop()
         {
-            int numberOfStopped = _threads.Length;
-
-            foreach (var thread in _threads)
+            lock (_locked)
             {
-                thread.Abort();
+                if (_run)
+                {
+                    Console.WriteLine("Выполняется остановка...");
+                }
             }
-
-            Console.WriteLine($"Обработка остановлена.Количество остановленных потоков: {numberOfStopped}");
+            _currentTask.Wait(5000);
+            _run = false;
+            _eventWait.Set();
+            Console.WriteLine("Остановка выполнена");
         }
 
         public void Add(Action action)
         {
-           _queueActions.Enqueue(action);
+            lock (_locked)
+            {
+                _queueActions.Enqueue(action);
+            }
+            _eventWait.Set();
         }
 
         public void Clear()
         {
             int numberOfCleared = _queueActions.Count;
-            _queueActions.Clear();
-            Console.WriteLine($"Очистка очереди. Количество задач: {numberOfCleared}");
-
+            lock (_locked)
+            {
+                _queueActions.Clear();
+                Console.WriteLine($"Очистка очереди. Количество задач: {numberOfCleared}");
+            }
+            _eventWait.Set();
+            Console.WriteLine("Очистка выполнена");
         }
 
-
-        //ожидание завершения потоков
-
-        public bool AwaitingFlow()
+        private void Processing(Action action)
         {
-            Console.WriteLine($"Ожидание завершения всех потоков...");
-            for (int i = 0; i < _threads.Length; i++)
+            _semaphore.WaitOne();
+            try
             {
-                _threads[i].Join();
+                action.Invoke();
+                Console.WriteLine($" ID Потока -  { Thread.CurrentThread.ManagedThreadId}");
             }
-
-            return true;
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            finally
+            {
+                _eventWait.Set();
+                _semaphore.Release();
+            }
         }
 
     }
