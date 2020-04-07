@@ -7,7 +7,7 @@
     <ProjectGuid>{64C8E25F-A4E1-45B5-8B14-52D8080C8763}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleAppThreadNew</RootNamespace>
-    <AssemblyName>ConsoleAppThreadNew</AssemblyName>
+    <AssemblyName>ConsoleAppThreadNewAsyncAwait</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
