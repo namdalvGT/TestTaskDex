@@ -15,72 +15,80 @@ namespace ConsoleAppThreadNewAsync.Class
         private EventWaitHandle _eventWait = new AutoResetEvent(false);
         private bool _run = false;
         private object _locked = new object();
-        private Task _currentTask = null;
-        private Semaphore _semaphore;
+        private readonly CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
+        private CancellationToken _token;
 
         public int Amount { get; set; }
 
-        public  void  Start(int maxConcurrent)
+        public void Start(int maxConcurrent)
         {
-            _currentTask =Task.Run(() =>
+            try
             {
-                lock (_locked)
+                _token = _cancellationTokenSource.Token;
+                Task.Run(async () =>
                 {
-                    Amount = _queueActions.Count;
-                }
-
-                _run = true;
-                _eventWait = new AutoResetEvent(false);
-
-                using (_semaphore = new Semaphore(maxConcurrent, maxConcurrent))
-                {
-                    while (_run)
+                    lock (_locked)
                     {
-                        Action action = null;
-                        lock (_locked)
+                        Amount = _queueActions.Count;
+                    }
+
+                    _run = true;
+                    _eventWait = new AutoResetEvent(false);
+
+                    using (var semaphore = new Semaphore(maxConcurrent, maxConcurrent))
+                    {
+                        while (_run)
                         {
-                            if (_queueActions.Any())
+                            Action action = null;
+                            lock (_locked)
                             {
-                                action = _queueActions.Dequeue();
+                                if (_queueActions.Any())
+                                {
+                                    action = _queueActions.Dequeue();
+                                }
+                            }
+
+                            if (action != null)
+                            {
+                                await Processing(action, semaphore);
+                            }
+                            else
+                            {
+                                _eventWait.WaitOne();
                             }
                         }
-
-                        if (action != null)
-                        {
-                            Processing(action);
-                        }
-                        else
-                        {
-                            _eventWait.WaitOne();
-                        }
+                        Console.WriteLine($"Задачи обработаны. Количество обработанных {Amount}");
                     }
-                    Console.WriteLine($"Задачи обработаны. Количество обработанных {Amount}");
-                }
-            });
+                }, _token);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public void Stop()
         {
-            lock (_locked)
-            {
-                if (_run)
-                {
-                    Console.WriteLine("Выполняется остановка...");
-                }
-            }
-            _currentTask.Wait(5000);
-            _run = false;
-            _eventWait.Set();
-            Console.WriteLine("Остановка выполнена");
+            _cancellationTokenSource.Cancel();
+            Console.WriteLine("Программа остановлена");
         }
 
         public void Add(Action action)
         {
-            lock (_locked)
+            try
             {
-                _queueActions.Enqueue(action);
+                _token.ThrowIfCancellationRequested();
+                lock (_locked)
+                {
+                    _queueActions.Enqueue(action);
+                }
+                _eventWait.Set();
             }
-            _eventWait.Set();
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public void Clear()
@@ -95,13 +103,12 @@ namespace ConsoleAppThreadNewAsync.Class
             Console.WriteLine("Очистка выполнена");
         }
 
-        private async void Processing(Action action)
+        private async Task Processing(Action action, Semaphore semaphore)
         {
-            _semaphore.WaitOne();
+            semaphore.WaitOne();
             try
             {
-                await Task.Run(action);
-                Console.WriteLine($" ID Потока -  { Thread.CurrentThread.ManagedThreadId}");
+                await Task.Run(action, _token);
             }
             catch (Exception e)
             {
@@ -110,9 +117,8 @@ namespace ConsoleAppThreadNewAsync.Class
             finally
             {
                 _eventWait.Set();
-                _semaphore.Release();
+                semaphore.Release();
             }
         }
-
     }
 }
