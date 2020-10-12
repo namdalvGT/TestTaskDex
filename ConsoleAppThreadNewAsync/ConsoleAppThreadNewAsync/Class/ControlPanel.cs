@@ -1,29 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleAppThreadNewAsync.Class
 {
     class ControlPanel
     {
-        public void ReaderKeys(JobExecutor js, Action action,int numberJob)
+        public void ReaderKeys(JobExecutor je, Action action,int numberJob)
         {
            while (true)
            {
                var keys = Console.ReadLine();
-               if (keys == "1" || keys == "2" || keys == "3")
+               if (keys == "1" || keys == "2" || keys == "3" || keys == "4")
                {
                    switch (keys)
                    {
                        case "1":
-                           AddName(js, action,numberJob);
+                           AddName(je, action,numberJob);
                            break;
                        case "2":
-                           ClearQueue(js, action);
+                           je.Start(4);
+                            break;
+                        case "3":
+                           ClearQueue(je, action);
                            break;
-                       case "3":
-                           StopJob(js, action);
+                       case "4":
+                           StopJob(je, action);
                            break;
                    }
                }
@@ -40,14 +40,13 @@ namespace ConsoleAppThreadNewAsync.Class
             {
                 je.Add(action);
             }
+            Console.WriteLine($"В очередь добавлено {numberJob} записей");
         }
-
 
         private void ClearQueue(JobExecutor je, Action action)
         {
             je.Clear();
         }
-
 
         private void StopJob(JobExecutor je, Action action)
         {

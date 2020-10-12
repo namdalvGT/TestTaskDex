@@ -12,12 +12,9 @@ namespace ConsoleAppThreadNewAsync
             JobExecutor je = new JobExecutor();
             ControlPanel controlPanel = new ControlPanel();
             Action action = new Action(Displayed);
-            Console.WriteLine("Для выполнения старта, нажмите любую клавишу...");
-            Console.ReadKey();
-            Console.WriteLine($"1-Добавить имена\n2-Очистить список\n3-Остановить работу");
-            je.Start(4);
-            controlPanel.ReaderKeys(je,action,10);
-
+            Console.WriteLine($"1-Добавить имена\n2-Запустить работу\n3-Очистить список\n4-Остановить работу");
+            Console.WriteLine("Для запуска действия, введите цифру и нажмите ENTER...");
+            controlPanel.ReaderKeys(je, action, 10);
         }
 
         private static void Displayed()

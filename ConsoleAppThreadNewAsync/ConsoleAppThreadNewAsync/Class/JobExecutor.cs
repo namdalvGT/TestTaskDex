@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using ConsoleAppThreadNewAsync.Interface;
@@ -11,12 +9,11 @@ namespace ConsoleAppThreadNewAsync.Class
 {
     public class JobExecutor : IJobExecutor
     {
-        private Queue<Action> _queueActions = new Queue<Action>();
+        private readonly Queue<Action> _queueActions = new Queue<Action>();
         private EventWaitHandle _eventWait = new AutoResetEvent(false);
-        private bool _run = false;
-        private object _locked = new object();
-        private readonly CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
+        private CancellationTokenSource _cancellationTokenSource = null;
         private CancellationToken _token;
+        private bool _run = false;
 
         public int Amount { get; set; }
 
@@ -24,28 +21,29 @@ namespace ConsoleAppThreadNewAsync.Class
         {
             try
             {
+                if (_run)
+                {
+                    Console.WriteLine("Обработка уже запущена");
+                    return;
+                }
+                _cancellationTokenSource = new CancellationTokenSource();
                 _token = _cancellationTokenSource.Token;
+               
                 Task.Run(async () =>
                 {
-                    lock (_locked)
-                    {
-                        Amount = _queueActions.Count;
-                    }
-
-                    _run = true;
+                    Console.WriteLine("Запущена обработка очереди");
+                    Amount = _queueActions.Count;
+                     _run = true;
                     _eventWait = new AutoResetEvent(false);
 
                     using (var semaphore = new Semaphore(maxConcurrent, maxConcurrent))
                     {
-                        while (_run)
+                        while (!_cancellationTokenSource.IsCancellationRequested)
                         {
                             Action action = null;
-                            lock (_locked)
+                            if (_queueActions.Any())
                             {
-                                if (_queueActions.Any())
-                                {
-                                    action = _queueActions.Dequeue();
-                                }
+                                action = _queueActions.Dequeue();
                             }
 
                             if (action != null)
@@ -56,8 +54,10 @@ namespace ConsoleAppThreadNewAsync.Class
                             {
                                 _eventWait.WaitOne();
                             }
+                            
                         }
-                        Console.WriteLine($"Задачи обработаны. Количество обработанных {Amount}");
+                        _run = false;
+                        Console.WriteLine($"Обработка остановлена");
                     }
                 }, _token);
             }
@@ -70,6 +70,7 @@ namespace ConsoleAppThreadNewAsync.Class
 
         public void Stop()
         {
+            _run = false;
             _cancellationTokenSource.Cancel();
             Console.WriteLine("Программа остановлена");
         }
@@ -78,11 +79,7 @@ namespace ConsoleAppThreadNewAsync.Class
         {
             try
             {
-                _token.ThrowIfCancellationRequested();
-                lock (_locked)
-                {
-                    _queueActions.Enqueue(action);
-                }
+                _queueActions.Enqueue(action);
                 _eventWait.Set();
             }
             catch (Exception e)
@@ -94,11 +91,8 @@ namespace ConsoleAppThreadNewAsync.Class
         public void Clear()
         {
             int numberOfCleared = _queueActions.Count;
-            lock (_locked)
-            {
-                _queueActions.Clear();
-                Console.WriteLine($"Очистка очереди. Количество задач: {numberOfCleared}");
-            }
+            _queueActions.Clear();
+            Console.WriteLine($"Очистка очереди. Количество задач: {numberOfCleared}");
             _eventWait.Set();
             Console.WriteLine("Очистка выполнена");
         }
