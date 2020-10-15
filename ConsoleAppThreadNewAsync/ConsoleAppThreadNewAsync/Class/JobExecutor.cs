@@ -73,7 +73,7 @@ namespace ConsoleAppThreadNewAsync.Class
             semaphore.WaitOne();
             try
             {
-               action.Invoke();
+                Task.Factory.StartNew(action, _token);
             }
             catch (Exception e)
             {
