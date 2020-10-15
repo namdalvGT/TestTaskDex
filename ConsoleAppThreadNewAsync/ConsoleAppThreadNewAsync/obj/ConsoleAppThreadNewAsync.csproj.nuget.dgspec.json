@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync.csproj": {}
+    "C:\\Development\\Github\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync.csproj": {
+    "C:\\Development\\Github\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync.csproj",
+        "projectUniqueName": "C:\\Development\\Github\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync.csproj",
         "projectName": "ConsoleAppThreadNewAsync",
-        "projectPath": "C:\\GitHub\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync.csproj",
+        "projectPath": "C:\\Development\\Github\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync.csproj",
         "packagesPath": "C:\\Users\\N\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\obj\\",
+        "outputPath": "C:\\Development\\Github\\TestTaskDex\\ConsoleAppThreadNewAsync\\ConsoleAppThreadNewAsync\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

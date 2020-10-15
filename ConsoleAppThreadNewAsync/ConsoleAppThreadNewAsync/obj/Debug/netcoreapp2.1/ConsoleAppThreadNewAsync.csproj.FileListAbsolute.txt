@@ -9,3 +9,14 @@ C:\GitHub\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\bin\Debu
 C:\GitHub\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\bin\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.pdb
 C:\GitHub\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\obj\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.dll
 C:\GitHub\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\obj\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.pdb
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\obj\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.csprojAssemblyReference.cache
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\obj\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.csproj.CoreCompileInputs.cache
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\obj\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.AssemblyInfoInputs.cache
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\obj\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.AssemblyInfo.cs
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\obj\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.dll
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\obj\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.pdb
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\bin\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.deps.json
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\bin\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.runtimeconfig.json
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\bin\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.runtimeconfig.dev.json
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\bin\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.dll
+C:\Development\Github\TestTaskDex\ConsoleAppThreadNewAsync\ConsoleAppThreadNewAsync\bin\Debug\netcoreapp2.1\ConsoleAppThreadNewAsync.pdb

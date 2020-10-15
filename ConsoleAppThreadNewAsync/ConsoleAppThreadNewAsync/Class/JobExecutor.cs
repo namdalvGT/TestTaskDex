@@ -13,7 +13,7 @@ namespace ConsoleAppThreadNewAsync.Class
         private EventWaitHandle _eventWait = new AutoResetEvent(false);
         private CancellationTokenSource _cancellationTokenSource = null;
         private CancellationToken _token;
-        private bool _run = false;
+        private Task _currentTask ;
 
         public int Amount { get; set; }
 
@@ -21,45 +21,16 @@ namespace ConsoleAppThreadNewAsync.Class
         {
             try
             {
-                if (_run)
+                if (_currentTask!=null && _currentTask.Status ==TaskStatus.Running)
                 {
-                    Console.WriteLine("Обработка уже запущена");
+                    Console.WriteLine("Обработка уже запущенна");
                     return;
                 }
+
                 _cancellationTokenSource = new CancellationTokenSource();
                 _token = _cancellationTokenSource.Token;
-               
-                Task.Run(async () =>
-                {
-                    Console.WriteLine("Запущена обработка очереди");
-                    Amount = _queueActions.Count;
-                     _run = true;
-                    _eventWait = new AutoResetEvent(false);
+                _currentTask =  Task.Run(() => { RunProcess(maxConcurrent);}, _token);
 
-                    using (var semaphore = new Semaphore(maxConcurrent, maxConcurrent))
-                    {
-                        while (!_cancellationTokenSource.IsCancellationRequested)
-                        {
-                            Action action = null;
-                            if (_queueActions.Any())
-                            {
-                                action = _queueActions.Dequeue();
-                            }
-
-                            if (action != null)
-                            {
-                                await Processing(action, semaphore);
-                            }
-                            else
-                            {
-                                _eventWait.WaitOne();
-                            }
-                            
-                        }
-                        _run = false;
-                        Console.WriteLine($"Обработка остановлена");
-                    }
-                }, _token);
             }
             catch (Exception e)
             {
@@ -70,8 +41,8 @@ namespace ConsoleAppThreadNewAsync.Class
 
         public void Stop()
         {
-            _run = false;
             _cancellationTokenSource.Cancel();
+            _currentTask = null;
             Console.WriteLine("Программа остановлена");
         }
 
@@ -97,12 +68,12 @@ namespace ConsoleAppThreadNewAsync.Class
             Console.WriteLine("Очистка выполнена");
         }
 
-        private async Task Processing(Action action, Semaphore semaphore)
+        private void Processing(Action action, Semaphore semaphore)
         {
             semaphore.WaitOne();
             try
             {
-                await Task.Run(action, _token);
+               action.Invoke();
             }
             catch (Exception e)
             {
@@ -112,6 +83,34 @@ namespace ConsoleAppThreadNewAsync.Class
             {
                 _eventWait.Set();
                 semaphore.Release();
+            }
+        }
+
+        private void RunProcess(int maxConcurrent)
+        {
+            Console.WriteLine("Запущена обработка очереди");
+            Amount = _queueActions.Count;
+            _eventWait = new AutoResetEvent(false);
+            using (var semaphore = new Semaphore(maxConcurrent, maxConcurrent))
+            {
+                while (!_cancellationTokenSource.IsCancellationRequested)
+                {
+                    Action action = null;
+                    if (_queueActions.Any())
+                    {
+                        action = _queueActions.Dequeue();
+                    }
+
+                    if (action != null)
+                    {
+                        Processing(action, semaphore);
+                    }
+                    else
+                    {
+                        _eventWait.WaitOne();
+                    }
+                }
+                Console.WriteLine($"Обработка остановлена");
             }
         }
     }
