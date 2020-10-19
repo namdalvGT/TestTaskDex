@@ -1,0 +1,256 @@
+18.10.2020 09:03:09 Google.com FAILED
+18.10.2020 09:03:09 Yandex.ru FAILED
+18.10.2020 09:03:09 Habr.com FAILED
+18.10.2020 09:03:09 Youtube.com FAILED
+18.10.2020 09:03:09 Wikipedia.org FAILED
+18.10.2020 09:03:09 Amazon.com FAILED
+
+18.10.2020 09:03:38 Google.com FAILED
+
+18.10.2020 09:03:38 Yandex.ru FAILED
+
+18.10.2020 09:03:38 Habr.com FAILED
+
+18.10.2020 09:03:38 Youtube.com FAILED
+
+18.10.2020 09:03:38 Wikipedia.org FAILED
+
+18.10.2020 09:03:38 Amazon.com FAILED
+18.10.2020 09:04:00 Google.com FAILED
+
+18.10.2020 09:04:00 Yandex.ru FAILED
+
+18.10.2020 09:04:00 Habr.com FAILED
+
+18.10.2020 09:04:00 Youtube.com FAILED
+
+18.10.2020 09:04:00 Wikipedia.org FAILED
+
+18.10.2020 09:04:00 Amazon.com FAILED
+
+18.10.2020 09:10:35 Google.com FAILED
+
+18.10.2020 09:10:35 Yandex.ru FAILED
+
+18.10.2020 09:10:35 Habr.com FAILED
+
+18.10.2020 09:10:35 Youtube.com FAILED
+
+18.10.2020 09:10:35 Wikipedia.org FAILED
+
+18.10.2020 09:10:35 Amazon.com FAILED
+
+18.10.2020 09:12:29 Google.com FAILED
+
+18.10.2020 09:12:29 Yandex.ru FAILED
+
+18.10.2020 09:12:29 Habr.com FAILED
+
+18.10.2020 09:12:29 Youtube.com FAILED
+
+18.10.2020 09:12:29 Wikipedia.org FAILED
+
+18.10.2020 09:12:29 Amazon.com FAILED
+
+18.10.2020 09:12:40 google.com OK
+
+18.10.2020 09:12:41 ya.ru OK
+
+18.10.2020 09:12:41 wikipedia.org OK
+
+18.10.2020 09:12:41 habr.com OK
+
+18.10.2020 09:12:41 amazon.com OK
+
+18.10.2020 09:12:41 youtube.com OK
+
+18.10.2020 10:04:24 google.com OK
+
+18.10.2020 10:04:24 ya.ru OK
+
+18.10.2020 10:04:24 amazon.com OK
+
+18.10.2020 10:04:24 habr.com OK
+
+18.10.2020 10:04:24 youtube.com OK
+
+18.10.2020 10:04:24 wikipedia.org OK
+
+18.10.2020 10:05:02 google.com OK
+
+18.10.2020 10:05:02 ya.ru OK
+
+18.10.2020 10:05:02 wikipedia.org OK
+
+18.10.2020 10:05:02 habr.com OK
+
+18.10.2020 10:05:02 amazon.com OK
+
+18.10.2020 10:05:02 youtube.com OK
+
+18.10.2020 10:05:11 google.com OK
+
+18.10.2020 10:05:12 amazon.ru OK
+
+18.10.2020 10:05:12 ya.ru OK
+
+18.10.2020 10:05:12 wikipedia.org OK
+
+18.10.2020 10:05:12 habr.com OK
+
+18.10.2020 10:05:12 youtube.com OK
+
+18.10.2020 10:05:12 amazon.com OK
+
+18.10.2020 10:05:12 ya.com OK
+
+18.10.2020 10:11:20 google.com OK OK
+
+18.10.2020 10:11:21 habr.com OK OK
+
+18.10.2020 10:11:21 amazon.ru OK OK
+
+18.10.2020 10:11:21 ya.ru Ok OK
+
+18.10.2020 10:11:21 wikipedia.org OK OK
+
+18.10.2020 10:13:24 google.com OK OK
+
+18.10.2020 10:13:28 habr.com OK OK
+
+18.10.2020 10:13:31 wikipedia.org OK OK
+
+18.10.2020 10:13:35 amazon.com OK OK
+
+18.10.2020 10:13:27 ya.com OK OK
+
+18.10.2020 10:13:30 youtube.com OK OK
+
+18.10.2020 10:14:55 google.com OK OK
+
+18.10.2020 10:14:55 ya.ru Ok OK
+
+18.10.2020 10:14:55 amazon.ru OK OK
+
+18.10.2020 10:14:55 wikipedia.org OK OK
+
+18.10.2020 10:14:55 habr.com OK OK
+
+18.10.2020 10:14:55 youtube.com OK OK
+
+18.10.2020 10:14:55 amazon.com OK OK
+
+18.10.2020 10:14:55 ya.com OK OK
+
+18.10.2020 10:15:57 google.com OK OK
+
+18.10.2020 10:15:57 amazon.ru OK OK
+
+18.10.2020 10:15:57 ya.ru Ok OK
+
+18.10.2020 10:15:57 wikipedia.org OK OK
+
+18.10.2020 10:15:57 habr.com OK OK
+
+18.10.2020 10:15:57 amazon.com OK OK
+
+18.10.2020 10:15:57 youtube.com OK OK
+
+18.10.2020 10:15:57 ya.com OK OK
+
+18.10.2020 10:17:54 google.com OK 200
+
+18.10.2020 10:17:54 ya.ru Ok 200
+
+18.10.2020 10:17:54 amazon.ru OK 200
+
+18.10.2020 10:17:54 wikipedia.org OK 200
+
+18.10.2020 10:17:54 habr.com OK 200
+
+18.10.2020 10:17:54 amazon.com OK 200
+
+18.10.2020 10:17:54 youtube.com OK 200
+
+18.10.2020 10:17:54 ya.com OK 200
+
+18.10.2020 10:18:08 google.com OK 200
+
+18.10.2020 10:18:08 ya.ru Ok 200
+
+18.10.2020 10:18:08 wikipedia.org OK 200
+
+18.10.2020 10:18:08 amazon.ru OK 200
+
+18.10.2020 10:18:08 habr.com OK 200
+
+18.10.2020 10:18:08 ya.com OK 200
+
+18.10.2020 10:18:08 amazon.com OK 200
+
+18.10.2020 10:18:08 youtube.com OK 200
+
+18.10.2020 10:46:01 google.com OK 200
+
+18.10.2020 10:46:01 ya.ru Ok 200
+
+18.10.2020 10:46:01 amazon.ru OK 200
+
+18.10.2020 10:46:01 wikipedia.org OK 200
+
+18.10.2020 10:46:01 habr.com OK 200
+
+18.10.2020 10:46:01 yandax.com OK 200
+
+18.10.2020 10:46:01 amazon.com OK 200
+
+18.10.2020 10:46:01 youtube.com OK 200
+
+18.10.2020 10:50:23 amazonul.ru FAILED 0
+
+18.10.2020 10:50:23 google.com OK 200
+
+18.10.2020 10:50:23 yandax.com OK 200
+
+18.10.2020 10:50:23 ya.ru Ok 200
+
+18.10.2020 10:50:23 wikipedia.org OK 200
+
+18.10.2020 10:50:23 habr.com OK 200
+
+18.10.2020 10:50:23 amazon.com OK 200
+
+18.10.2020 10:50:23 youtube.com OK 200
+
+18.10.2020 10:50:35 amazonul.ru FAILED 0
+
+18.10.2020 10:50:34 google.com OK 200
+
+18.10.2020 10:50:35 yandax.com OK 200
+
+18.10.2020 10:50:35 wikipedia.org OK 200
+
+18.10.2020 10:50:35 ya.ru Ok 200
+
+18.10.2020 10:50:35 habr.com OK 200
+
+18.10.2020 10:50:35 amazon.com OK 200
+
+18.10.2020 10:50:35 youtube.com OK 200
+
+18.10.2020 10:51:34 amazonul.ru FAILED 0
+
+18.10.2020 10:51:34 google.com OK 200
+
+18.10.2020 10:51:34 yandax.com OK 200
+
+18.10.2020 10:51:34 ya.ru Ok 200
+
+18.10.2020 10:51:34 wikipedia.org OK 200
+
+18.10.2020 10:51:34 habr.com OK 200
+
+18.10.2020 10:51:34 youtube.com OK 200
+
+18.10.2020 10:51:34 amazon.com OK 200
+

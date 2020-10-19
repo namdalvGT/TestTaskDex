@@ -1,0 +1,17 @@
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\PingerTests.deps.json
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\PingerTests.runtimeconfig.json
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\PingerTests.runtimeconfig.dev.json
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\PingerTests.dll
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\obj\Debug\netcoreapp2.1\PingerTests.csprojAssemblyReference.cache
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\obj\Debug\netcoreapp2.1\PingerTests.csproj.CoreCompileInputs.cache
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\obj\Debug\netcoreapp2.1\PingerTests.AssemblyInfoInputs.cache
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\obj\Debug\netcoreapp2.1\PingerTests.AssemblyInfo.cs
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\PingerTests.pdb
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\ConsoleAppPinger.dll
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\ConsoleAppPinger.pdb
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\obj\Debug\netcoreapp2.1\PingerTests.csproj.CopyComplete
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\obj\Debug\netcoreapp2.1\PingerTests.dll
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\obj\Debug\netcoreapp2.1\PingerTests.pdb

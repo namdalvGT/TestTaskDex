@@ -1,0 +1,11 @@
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\bin\Debug\netcoreapp2.1\ConsoleAppPinger.deps.json
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\bin\Debug\netcoreapp2.1\ConsoleAppPinger.runtimeconfig.json
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\bin\Debug\netcoreapp2.1\ConsoleAppPinger.runtimeconfig.dev.json
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\bin\Debug\netcoreapp2.1\ConsoleAppPinger.dll
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\bin\Debug\netcoreapp2.1\ConsoleAppPinger.pdb
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.csproj.CoreCompileInputs.cache
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.AssemblyInfoInputs.cache
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.AssemblyInfo.cs
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.dll
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.pdb
+C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.csprojAssemblyReference.cache

@@ -1,0 +1,11 @@
+[	
+ {"hostName": "google.com","prefix":"http", "port": "80","timeout": "1000"},
+ {"hostName": "ya.ru", "prefix":"http", "port": "80","timeout": "1000"},
+ {"hostName": "yandax.com", "prefix":"http", "port": "80","timeout": "1000"},
+ {"hostName": "habr.com", "prefix":"http", "port": "80","timeout": "1000"},
+ {"hostName": "youtube.com", "prefix":"http", "port": "80","timeout": "1000"},
+ {"hostName": "wikipedia.org", "prefix":"http", "port": "80","timeout": "1000"},
+ {"hostName": "amazon.com", "prefix":"http", "port": "80","timeout": "1000"},
+ {"hostName": "amazonul.ru", "prefix":"http", "port": "80","timeout": "1000"},
+ 
+]
