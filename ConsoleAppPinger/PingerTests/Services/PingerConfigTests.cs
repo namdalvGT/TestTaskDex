@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
 using ConsoleAppPinger;
 using ConsoleAppPinger.Interfaces;
-using ConsoleAppPinger.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ninject;
-using Ninject.Modules;
 
 namespace PingerTests.Services
 {
@@ -30,7 +24,8 @@ namespace PingerTests.Services
         [TestMethod]
         public void GenerateAddresses()
         {
-            var filePath = "ConfigTest/addressesTest.json";
+             var filePath = "ConfigTest/addressesTest.json";
+             File.Delete(filePath);
             _pingerConfig.GenerateAddresses(filePath);
         }
 
@@ -38,6 +33,7 @@ namespace PingerTests.Services
         public void GenerateSettings()
         {
             var filePath = "ConfigTest/settingsTest.json";
+            File.Delete(filePath);
             _pingerConfig.GenerateSettings(filePath);
         }
 

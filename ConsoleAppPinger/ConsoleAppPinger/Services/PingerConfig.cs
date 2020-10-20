@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using ConsoleAppPinger.Interfaces;
 using ConsoleAppPinger.Models;
 using Nancy.Json;
@@ -47,12 +48,17 @@ namespace ConsoleAppPinger.Services
         }
         public void GenerateAddresses(string filePath)
         {
-            
+            string directory = filePath.Split(new char[] { '/' }).FirstOrDefault();
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
             if (File.Exists(filePath))
             {
                 throw new Exception($"File by path:{filePath} exists ");
             }
-
+            
             using (StreamWriter file = File.CreateText(filePath))
             {
                 var adresses = new List<Address>();
@@ -70,6 +76,12 @@ namespace ConsoleAppPinger.Services
         }
         public void GenerateSettings(string filePath)
         {
+            string directory = filePath.Split(new char[] { '/' }).FirstOrDefault();
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
             if (File.Exists(filePath))
             {
                 throw new Exception($"File by path:{filePath} exists ");

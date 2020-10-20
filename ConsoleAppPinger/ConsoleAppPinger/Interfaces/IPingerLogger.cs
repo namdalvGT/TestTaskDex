@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using ConsoleAppPinger.Models;
+﻿using ConsoleAppPinger.Models;
 
 namespace ConsoleAppPinger.Interfaces
 {
-    interface IPingerLogger
+    public interface IPingerLogger
     {
         void Write(Logger itemLogger);
 

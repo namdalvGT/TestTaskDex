@@ -50,7 +50,6 @@ namespace ConsoleAppPinger.Services
                 log.Status = "FAILED";
                 SaveLog(log);
             }
-          
         }
 
         public void SaveLog(Logger log)

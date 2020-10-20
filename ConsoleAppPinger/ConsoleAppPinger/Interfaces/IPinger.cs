@@ -1,11 +1,8 @@
-﻿using Ninject;
-
-namespace ConsoleAppPinger.Interfaces
+﻿namespace ConsoleAppPinger.Interfaces
 {
     public interface IPinger
     {
         void Start();
-
         void Stop();
     }
 }

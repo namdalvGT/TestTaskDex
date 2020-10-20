@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConsoleAppPinger.Models
+﻿namespace ConsoleAppPinger.Models
 {
     public class Address
     {
