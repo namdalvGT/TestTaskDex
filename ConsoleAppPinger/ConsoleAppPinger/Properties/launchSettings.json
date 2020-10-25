@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleAppPinger": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Config/addresses.json\" \"Config/settings.json\""
+    }
+  }
+}

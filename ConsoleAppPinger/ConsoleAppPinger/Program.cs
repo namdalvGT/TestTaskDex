@@ -12,15 +12,13 @@ namespace ConsoleAppPinger
     {
         static void Main(string[] args)
         {
-            if (args.Length > 1)
+            if (args.Length > 0)
             {
                 NinjectModule registrations = new NinjectRegistrations();
                 var kernel = new StandardKernel(registrations);
                 var pinger = kernel.Get<IPinger>();
-                var pathAddresses = args[1];
-                var pathSetting = args[2];
-                //var pathAddresses = "Config/addresses.json";
-                //var pathSetting = "Config/settings.json";
+                var pathAddresses = args[0];
+                var pathSetting = args[1];
                 CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
                 CancellationToken token;
                 token = cancellationTokenSource.Token;

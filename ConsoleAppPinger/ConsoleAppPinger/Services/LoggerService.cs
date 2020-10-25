@@ -15,7 +15,7 @@ namespace ConsoleAppPinger.Services
             {
                 statusCode = itemLogger.StatusCode.ToString();
             }
-            string data =$"{itemLogger.CreatedDate:dd/MM/yyyy hh:mm:ss} {itemLogger.HostName} {itemLogger.Status} {statusCode}";
+            string data =$"{itemLogger.CreatedDate:dd/MM/yyyy hh:mm:ss} {itemLogger.HostName} {itemLogger.Status} {statusCode}\n";
             Save(data);
             Console.Write(data);
         }

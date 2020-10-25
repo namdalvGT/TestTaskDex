@@ -1,0 +1,151 @@
+26.10.2020 12:33:31 yandax.com FAILED 
+26.10.2020 12:33:31 habr.com FAILED 
+26.10.2020 12:33:31 google.com OK 200
+26.10.2020 12:33:31 youtube.com OK 
+26.10.2020 12:33:31 wikipedia.org FAILED 
+26.10.2020 12:33:31 amazon.com FAILED 
+26.10.2020 12:33:32 amazonul.ru FAILED 
+26.10.2020 12:33:32 ya.ru Ok 200
+26.10.2020 12:33:32 yandax.com FAILED 
+26.10.2020 12:33:32 habr.com OK 
+26.10.2020 12:33:32 google.com OK 200
+26.10.2020 12:33:32 youtube.com OK 
+26.10.2020 12:33:32 wikipedia.org FAILED 
+26.10.2020 12:33:33 amazon.com FAILED 
+26.10.2020 12:33:33 amazonul.ru FAILED 
+26.10.2020 12:33:33 ya.ru Ok 200
+26.10.2020 12:33:33 yandax.com FAILED 
+26.10.2020 12:33:33 habr.com OK 
+26.10.2020 12:33:33 google.com OK 200
+26.10.2020 12:33:33 youtube.com OK 
+26.10.2020 12:33:34 wikipedia.org FAILED 
+26.10.2020 12:33:34 amazon.com FAILED 
+26.10.2020 12:33:34 ya.ru Ok 200
+26.10.2020 12:33:34 amazonul.ru FAILED 
+26.10.2020 12:33:34 yandax.com FAILED 
+26.10.2020 12:33:34 habr.com OK 
+26.10.2020 12:33:34 google.com OK 200
+26.10.2020 12:33:35 youtube.com OK 
+26.10.2020 12:33:35 wikipedia.org FAILED 
+26.10.2020 12:33:35 ya.ru Ok 200
+26.10.2020 12:33:35 amazon.com FAILED 
+26.10.2020 12:33:35 amazonul.ru FAILED 
+26.10.2020 12:33:35 yandax.com FAILED 
+26.10.2020 12:33:36 habr.com OK 
+26.10.2020 12:33:36 google.com OK 200
+26.10.2020 12:33:36 youtube.com OK 
+26.10.2020 12:33:36 wikipedia.org FAILED 
+26.10.2020 12:33:36 ya.ru Ok 200
+26.10.2020 12:33:36 amazon.com FAILED 
+26.10.2020 12:33:36 amazonul.ru FAILED 
+26.10.2020 12:33:36 yandax.com FAILED 
+26.10.2020 12:33:37 habr.com OK 
+26.10.2020 12:33:37 google.com OK 200
+26.10.2020 12:33:37 youtube.com OK 
+26.10.2020 12:33:37 wikipedia.org FAILED 
+26.10.2020 12:33:37 ya.ru Ok 200
+26.10.2020 12:33:37 amazon.com FAILED 
+26.10.2020 12:33:37 amazonul.ru FAILED 
+26.10.2020 12:33:38 yandax.com FAILED 
+26.10.2020 12:33:38 habr.com OK 
+26.10.2020 12:33:38 google.com OK 200
+26.10.2020 12:33:38 youtube.com OK 
+26.10.2020 12:33:38 wikipedia.org FAILED 
+26.10.2020 12:33:38 ya.ru Ok 200
+26.10.2020 12:33:38 amazon.com FAILED 
+26.10.2020 12:33:38 amazonul.ru FAILED 
+26.10.2020 12:33:39 yandax.com FAILED 
+26.10.2020 12:33:39 google.com OK 200
+26.10.2020 12:33:39 habr.com OK 
+26.10.2020 12:33:39 youtube.com OK 
+26.10.2020 12:33:39 wikipedia.org FAILED 
+26.10.2020 12:33:55 yandax.com FAILED 
+
+26.10.2020 12:33:55 google.com OK 200
+
+26.10.2020 12:33:55 habr.com FAILED 
+
+26.10.2020 12:33:55 youtube.com OK 
+
+26.10.2020 12:33:56 wikipedia.org FAILED 
+
+26.10.2020 12:33:56 amazon.com FAILED 
+
+26.10.2020 12:33:56 ya.ru Ok 200
+
+26.10.2020 12:33:56 amazonul.ru FAILED 
+
+26.10.2020 12:33:57 yandax.com FAILED 
+
+26.10.2020 12:33:57 habr.com OK 
+
+26.10.2020 12:33:57 google.com OK 200
+
+26.10.2020 12:33:57 youtube.com OK 
+
+26.10.2020 12:33:57 wikipedia.org FAILED 
+
+26.10.2020 12:33:57 ya.ru Ok 200
+
+26.10.2020 12:33:57 amazon.com FAILED 
+
+26.10.2020 12:33:57 amazonul.ru FAILED 
+
+26.10.2020 12:33:58 yandax.com FAILED 
+
+26.10.2020 12:33:58 habr.com OK 
+
+26.10.2020 12:33:58 google.com OK 200
+
+26.10.2020 12:33:58 youtube.com OK 
+
+26.10.2020 12:33:58 wikipedia.org FAILED 
+
+26.10.2020 12:33:58 ya.ru Ok 200
+
+26.10.2020 12:33:58 amazon.com FAILED 
+
+26.10.2020 12:33:58 amazonul.ru FAILED 
+
+26.10.2020 12:33:59 yandax.com FAILED 
+
+26.10.2020 12:33:59 habr.com OK 
+
+26.10.2020 12:33:59 google.com OK 200
+
+26.10.2020 12:33:59 youtube.com OK 
+
+26.10.2020 12:33:59 wikipedia.org FAILED 
+
+26.10.2020 12:33:59 ya.ru Ok 200
+
+26.10.2020 12:33:59 amazon.com FAILED 
+
+26.10.2020 12:34:00 amazonul.ru FAILED 
+
+26.10.2020 12:34:00 yandax.com FAILED 
+
+26.10.2020 12:34:00 google.com OK 200
+
+26.10.2020 12:34:00 habr.com OK 
+
+26.10.2020 12:34:00 youtube.com OK 
+
+26.10.2020 12:34:00 wikipedia.org FAILED 
+
+26.10.2020 12:34:01 amazon.com FAILED 
+
+26.10.2020 12:34:01 amazonul.ru FAILED 
+
+26.10.2020 12:34:01 ya.ru Ok 200
+
+26.10.2020 12:34:01 yandax.com FAILED 
+
+26.10.2020 12:34:01 habr.com OK 
+
+26.10.2020 12:34:01 google.com OK 200
+
+26.10.2020 12:34:01 youtube.com OK 
+
+26.10.2020 12:34:02 wikipedia.org FAILED 
+
