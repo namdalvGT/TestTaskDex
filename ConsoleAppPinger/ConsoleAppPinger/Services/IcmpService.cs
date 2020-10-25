@@ -6,18 +6,18 @@ using ConsoleAppPinger.Models;
 
 namespace ConsoleAppPinger.Services
 {
-    class PingerIcmp: IPingerIcmp
+    public class IcmpService: IProtocol
     {
-        private IPingerLogger _pingerLogger;
+        private readonly ILogger _logger;
 
-        public PingerIcmp(IPingerLogger pingerLogger)
+        public IcmpService(ILogger logger)
         {
-            _pingerLogger = pingerLogger;
+            _logger = logger;
         }
 
         public void Start(Address address)
         {
-            var log = new Logger() { CreatedDate = DateTime.Now, HostName = address.HostName };
+            var log = new Logger() { HostName = address.HostName };
             try
             {
                 Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Raw, ProtocolType.Icmp);
@@ -33,9 +33,9 @@ namespace ConsoleAppPinger.Services
             }
         }
 
-        public void SaveLog(Logger log)
+        private void SaveLog(Logger log)
         {
-            _pingerLogger.Write(log);
+            _logger.Write(log);
         }
     }
 }

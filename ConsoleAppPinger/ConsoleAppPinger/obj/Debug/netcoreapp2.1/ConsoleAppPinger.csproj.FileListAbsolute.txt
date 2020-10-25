@@ -8,4 +8,3 @@ C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\ne
 C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.AssemblyInfo.cs
 C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.dll
 C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.pdb
-C:\Development\Github\TestTaskDex\ConsoleAppPinger\ConsoleAppPinger\obj\Debug\netcoreapp2.1\ConsoleAppPinger.csprojAssemblyReference.cache

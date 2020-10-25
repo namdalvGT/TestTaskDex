@@ -6,12 +6,12 @@ using ConsoleAppPinger.Models;
 
 namespace ConsoleAppPinger.Services
 {
-    class PingerHttp:IPingerHttp
+    public class HttpService:IProtocol
     {
-        private IPingerLogger _pingerLogger;
-        public PingerHttp(IPingerLogger pingerLogger)
+        private readonly ILogger _logger;
+        public HttpService(ILogger logger)
         {
-            _pingerLogger = pingerLogger;
+            _logger = logger;
         }
 
         public void Start(Address address)
@@ -34,7 +34,7 @@ namespace ConsoleAppPinger.Services
             }
         }
 
-        public void CheckConnection(Task<HttpResponseMessage> responseTask,Logger log,HttpClient client)
+        private void CheckConnection(Task<HttpResponseMessage> responseTask,Logger log,HttpClient client)
         {
             try
             {
@@ -52,9 +52,9 @@ namespace ConsoleAppPinger.Services
             }
         }
 
-        public void SaveLog(Logger log)
+        private void SaveLog(Logger log)
         {
-            _pingerLogger.Write(log);
+            _logger.Write(log);
         }
     }
 }

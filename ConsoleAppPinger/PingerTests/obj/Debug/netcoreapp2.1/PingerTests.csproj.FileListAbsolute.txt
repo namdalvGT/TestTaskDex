@@ -1,6 +1,3 @@
-C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\PingerTests.deps.json
 C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\PingerTests.runtimeconfig.json
 C:\Development\Github\TestTaskDex\ConsoleAppPinger\PingerTests\bin\Debug\netcoreapp2.1\PingerTests.runtimeconfig.dev.json

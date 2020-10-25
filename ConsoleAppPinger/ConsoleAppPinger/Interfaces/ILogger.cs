@@ -2,7 +2,7 @@
 
 namespace ConsoleAppPinger.Interfaces
 {
-    public interface IPingerLogger
+    public interface ILogger
     {
         void Write(Logger itemLogger);
 

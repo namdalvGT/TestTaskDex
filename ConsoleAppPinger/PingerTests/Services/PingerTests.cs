@@ -1,31 +1,27 @@
 ﻿using System.Threading;
 using ConsoleAppPinger;
 using ConsoleAppPinger.Interfaces;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ConsoleAppPinger.Services;
+using Moq;
 using Ninject;
+using NUnit.Framework;
 
 namespace PingerTests.Services
 {
-    [TestClass]
     public class PingerTests
     {
-        private StandardKernel _kernel;
-
-        private IPinger _pinger;
-
-        public PingerTests()
-        {
-            var registrations = new NinjectRegistrations();
-            _kernel = new StandardKernel(registrations);
-            _pinger = _kernel.Get<IPinger>();
-        }
-
-        [TestMethod]
+        [Test]
         public void StartAndStop()
         {
-            _pinger.Start();
+            var pathAddresses = "ConfigTest/addressesTest.json";
+            var pathSettings = "ConfigTest/settingsTest.json";
+            CancellationTokenSource  cancellationToken = new CancellationTokenSource();
+            var mockConfig = new Mock<IConfig>();
+            var mockProtocols = new Mock<IProtocol>();
+            var pingerService = new PingerService(mockConfig.Object, new[] {mockProtocols.Object});
+            Assert.DoesNotThrow(() => { pingerService.Start(cancellationToken.Token, pathAddresses, pathSettings); });
             Thread.Sleep(5000);
-            _pinger.Stop();
+            Assert.DoesNotThrow(() => { pingerService.Stop(cancellationToken);});
         }
     }
 }

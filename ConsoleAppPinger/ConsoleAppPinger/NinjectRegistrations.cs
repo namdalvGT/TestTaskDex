@@ -11,12 +11,13 @@ namespace ConsoleAppPinger
     {
         public override void Load()
         {
-            Bind<IPinger>().To<Pinger>();
-            Bind<IPingerConfig>().To<PingerConfig>();
-            Bind<IPingerLogger>().To<PingerLogger>();
-            Bind<IPingerHttp>().To<PingerHttp>();
-            Bind<IPingerIcmp>().To<PingerIcmp>();
-            Bind<IPingerTcp>().To<PingerTcp>();
+            Bind<IPinger>().To<PingerService>();
+            Bind<IConfig>().To<ConfigService>();
+            Bind<IGenerate>().To<GenerateService>();
+            Bind<ILogger>().To<LoggerService>();
+            Bind<IProtocol>().To<HttpService>();
+            Bind<IProtocol>().To<TcpService>();
+            Bind<IProtocol>().To<IcmpService>();
         }
     }
 }

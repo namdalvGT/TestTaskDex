@@ -5,16 +5,17 @@ using ConsoleAppPinger.Models;
 
 namespace ConsoleAppPinger.Services
 {
-    public class PingerLogger:IPingerLogger
+    public class LoggerService:ILogger
     {
         public void Write(Logger itemLogger)
         {
             var statusCode = "";
+            itemLogger.CreatedDate=DateTime.Now;
             if (itemLogger.StatusCode != 0)
             {
                 statusCode = itemLogger.StatusCode.ToString();
             }
-            string data =$"{itemLogger.CreatedDate:dd/MM/yyyy hh:mm:ss} {itemLogger.HostName} {itemLogger.Status} {statusCode}\n";
+            string data =$"{itemLogger.CreatedDate:dd/MM/yyyy hh:mm:ss} {itemLogger.HostName} {itemLogger.Status} {statusCode}";
             Save(data);
             Console.Write(data);
         }

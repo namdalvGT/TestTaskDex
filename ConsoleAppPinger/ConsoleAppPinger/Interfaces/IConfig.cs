@@ -3,14 +3,10 @@ using ConsoleAppPinger.Models;
 
 namespace ConsoleAppPinger.Interfaces
 {
-    public interface IPingerConfig
+    public interface IConfig
     {
         List<Address> GetAddresses(string filePath);
 
         int GetInterval(string filePath);
-
-        void GenerateAddresses(string filePath);
-
-        void GenerateSettings(string filePath);
     }
 }

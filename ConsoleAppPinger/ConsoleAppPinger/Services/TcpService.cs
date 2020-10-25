@@ -5,12 +5,12 @@ using ConsoleAppPinger.Models;
 
 namespace ConsoleAppPinger.Services
 {
-    class PingerTcp:IPingerTcp
+    public class TcpService: IProtocol
     {
-        private IPingerLogger _pingerLogger;
-        public PingerTcp(IPingerLogger pingerLogger)
+        private readonly ILogger _logger;
+        public TcpService(ILogger logger)
         {
-            _pingerLogger = pingerLogger;
+            _logger = logger;
         }
 
         public void Start(Address address)
@@ -23,7 +23,10 @@ namespace ConsoleAppPinger.Services
                 var success = result.AsyncWaitHandle.WaitOne(address.Timeout);
                 log.Status = success ? "OK" : "FAILED";
                 SaveLog(log);
-                client.EndConnect(result);
+                if (client.Connected)
+                {
+                    client.EndConnect(result);
+                }
             }
             catch
             {
@@ -38,7 +41,7 @@ namespace ConsoleAppPinger.Services
        
         public void SaveLog(Logger log)
         {
-           _pingerLogger.Write(log);
+           _logger.Write(log);
         }
     }
 }
