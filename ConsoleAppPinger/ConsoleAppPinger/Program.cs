@@ -12,7 +12,7 @@ namespace ConsoleAppPinger
     {
         static void Main(string[] args)
         {
-            if (args.Length > 0)
+            if (args.Length>1)
             {
                 NinjectModule registrations = new NinjectRegistrations();
                 var kernel = new StandardKernel(registrations);
