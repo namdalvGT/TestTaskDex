@@ -16,11 +16,10 @@ namespace ConsoleAppPinger.Services
 
         public void Start(Address address)
         {
-            var log = new Logger() { CreatedDate = DateTime.Now, HostName = address.HostName };
+            var log = new Logger() { HostName = address.HostName };
             try
             {
-                HttpClient client = new HttpClient();
-                client.Timeout = TimeSpan.FromSeconds(address.Timeout);
+                HttpClient client = new HttpClient {Timeout = TimeSpan.FromSeconds(address.Timeout)};
                 string urlSite = $"{address.Prefix}://{address.HostName}/";
                 client.GetAsync(urlSite).ContinueWith(responseTask =>
                 {
@@ -36,18 +35,29 @@ namespace ConsoleAppPinger.Services
 
         private void CheckConnection(Task<HttpResponseMessage> responseTask,Logger log,HttpClient client)
         {
+            HttpResponseMessage result ;
             try
             {
-                var result = responseTask.Result;
-                log.Status = result.ReasonPhrase;
-                log.StatusCode = (int)result.StatusCode;
-                client.Dispose();
-                responseTask.Dispose();
-                SaveLog(log);
+                result = responseTask.Result;
+                var statusCode = (int)result.StatusCode;
+                if (statusCode == 200)
+                {
+                    log.Status = result.ReasonPhrase;
+                    log.StatusCode = (int)result.StatusCode;
+                }
+                else
+                {
+                    log.Status = "FAILED";
+                }
             }
             catch
             {
                 log.Status = "FAILED";
+            }
+            finally
+            {
+                client.Dispose();
+                responseTask.Dispose();
                 SaveLog(log);
             }
         }

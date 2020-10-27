@@ -1,29 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using ConsoleAppPinger.Interfaces;
+using ConsoleAppPinger.Models;
 
 namespace ConsoleAppPinger.Services
 {
     public class PingerService: IPinger
     {
-        private readonly IConfig _config;
         private readonly IProtocol[] _protocols;
-        public PingerService(IConfig config,
-                             IProtocol[] protocols)
+        public PingerService(IProtocol[] protocols)
         {
-            _config = config;
             _protocols = protocols;
         }
-        public  void Start(CancellationToken token,string pathAddresses,string pathSetting)
+        public  void Start(CancellationToken token,List<Address> addresses)
         {
             try
             {
                 Task.Run(() =>
                 {
-                    var addresses = _config.GetAddresses(pathAddresses);
-                    var interval = _config.GetInterval(pathSetting);
                     while (!token.IsCancellationRequested)
                     {
                         foreach (var protocol in _protocols)
@@ -39,12 +36,8 @@ namespace ConsoleAppPinger.Services
                                         break;
                                     }
                                     protocol.Start(itemAddress);
-                                    Thread.Sleep(interval);
+                                    Thread.Sleep(itemAddress.Timeout);
                                 }
-                            }
-                            else
-                            {
-                                throw new Exception("typeProtocol not exists");
                             }
                         }
                     }
@@ -56,7 +49,7 @@ namespace ConsoleAppPinger.Services
             }
         }
 
-        public  void Stop(CancellationTokenSource cancellationTokenSource)
+        public void Stop(CancellationTokenSource cancellationTokenSource)
         {
             cancellationTokenSource.Cancel();
         }

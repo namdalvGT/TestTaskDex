@@ -15,19 +15,8 @@ namespace PingerTests.Services
         public void GetAddresses()
         {
             var filePath = "ConfigTest/addressesTest.json";
-            var mockGenerate = new Mock<IGenerate>();
-            var configService = new ConfigService(mockGenerate.Object);
+            var configService = new ConfigService();
             Assert.IsNotNull(configService.GetAddresses(filePath));
-        }
-
-        [Test]
-        public void GetInterval()
-        {
-            var filePath = "ConfigTest/settingsTest.json";
-            var mockGenerate = new Mock<IGenerate>();
-            var configService = new ConfigService(mockGenerate.Object);
-            var interval = configService.GetInterval(filePath);
-            Assert.IsTrue(interval > 0);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace ConsoleAppPinger.Services
 
         public void Start(Address address)
         {
-            var log = new Logger() { CreatedDate = DateTime.Now, HostName = address.HostName };
+            var log = new Logger() { HostName = address.HostName };
             TcpClient client = new TcpClient();
             try
             {
@@ -39,7 +39,7 @@ namespace ConsoleAppPinger.Services
             }
         }
        
-        public void SaveLog(Logger log)
+        private void SaveLog(Logger log)
         {
            _logger.Write(log);
         }

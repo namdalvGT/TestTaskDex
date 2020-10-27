@@ -10,7 +10,6 @@ namespace ConsoleAppPinger.Services
         public void Write(Logger itemLogger)
         {
             var statusCode = "";
-            itemLogger.CreatedDate=DateTime.Now;
             if (itemLogger.StatusCode != 0)
             {
                 statusCode = itemLogger.StatusCode.ToString();
@@ -20,7 +19,7 @@ namespace ConsoleAppPinger.Services
             Console.Write(data);
         }
 
-        public void Save(string data)
+        private void Save(string data)
         {
             try
             {

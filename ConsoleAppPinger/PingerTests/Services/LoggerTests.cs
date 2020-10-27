@@ -22,7 +22,6 @@ namespace PingerTests.Services
             };
             var loggerService = new LoggerService();
             loggerService.Write(itemLogger);
-
         }
     }
 }
